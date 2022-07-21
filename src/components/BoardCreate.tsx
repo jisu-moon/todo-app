@@ -38,6 +38,7 @@ interface IForm {
 }
 
 function BoardCreate() {
+  console.log('Sdfs');
   const { register, setValue, handleSubmit } = useForm<IForm>();
   const setTodos = useSetRecoilState(toDosState);
   const setBoradIndex = useSetRecoilState(boardIndexState);
