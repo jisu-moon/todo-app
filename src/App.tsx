@@ -6,6 +6,7 @@ import Board from './components/Board';
 import BoardCreate from './components/BoardCreate';
 import TodoDelete from './components/TodoDelete';
 import Modal from './components/Modal';
+import { useEffect } from 'react';
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -81,6 +82,11 @@ function App() {
         });
     }
   };
+  useEffect(() => {
+    const a = localStorage.getItem('todos');
+    const b = localStorage.getItem('board');
+    a ?? b ?? localStorage.setItem('board', JSON.stringify([]));
+  }, []);
 
   return (
     <>

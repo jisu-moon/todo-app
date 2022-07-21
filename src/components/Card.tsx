@@ -8,7 +8,7 @@ const Wrapper = styled.div<ICardProps>`
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
   opacity: ${props => (props.isDragging ? '0.5' : '1')};
   line-height: 1.2;
-  font-size: 18px;
+  font-size: 14px;
   position: relative;
   padding-bottom: 30px;
   padding-right: 20px;

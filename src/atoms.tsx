@@ -14,9 +14,15 @@ interface IModal {
   boardId: string;
 }
 
-const localTodos: string | {} = localStorage.getItem('todos') ?? {};
+let localTodos = localStorage.getItem('todos');
+let localBoard = localStorage.getItem('board');
+if (localTodos === null || localBoard === null) {
+  localStorage.setItem('todos', JSON.stringify({}));
+  localStorage.setItem('board', JSON.stringify([]));
+  localTodos = localStorage.getItem('todos');
+  localBoard = localStorage.getItem('board');
+}
 const parseTodos = JSON.parse(localTodos as any);
-const localBoard = localStorage.getItem('board') ?? [];
 const parseBoard = JSON.parse(localBoard as any);
 
 export const toDosState = atom<ItoDos>({
