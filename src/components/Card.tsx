@@ -46,7 +46,7 @@ const dateZero = (date: number) => {
 function Card({ todoTitle, todoId, index }: IDraggableCardProps) {
   const date = new Date(todoId);
   const onClick = () => {
-    console.log('Sf');
+    console.log('Sdfs');
   };
   return (
     <Draggable draggableId={todoId + ''} index={index}>

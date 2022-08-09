@@ -7,6 +7,7 @@ import BoardCreate from './components/BoardCreate';
 import TodoDelete from './components/TodoDelete';
 import Modal from './components/Modal';
 import { useEffect } from 'react';
+import SaveButton from './components/SaveButton';
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -112,6 +113,7 @@ function App() {
           </Droppable>
           <BoardCreate />
           <TodoDelete />
+          <SaveButton />
           <Modal />
         </Wrapper>
       </DragDropContext>
