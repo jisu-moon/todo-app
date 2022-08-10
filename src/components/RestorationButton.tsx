@@ -20,6 +20,7 @@ const Label = styled.label`
   border: 0;
   text-align: left;
   cursor: pointer;
+  font-size: 14px;
   &:hover {
     opacity: 0.5;
   }
@@ -53,7 +54,7 @@ function RestorationButton() {
   return (
     <>
       <Input id='restoration' type='file' onChange={onChange} accept='.txt' />
-      <Label htmlFor='restoration'>파일 업로드</Label>
+      <Label htmlFor='restoration'>복원하기</Label>
     </>
   );
 }
