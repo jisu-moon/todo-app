@@ -15,6 +15,7 @@ const Button = styled.button`
   padding-left: 15px;
   border: 0;
   text-align: left;
+  cursor: pointer;
   &:hover {
     opacity: 0.5;
   }

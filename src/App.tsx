@@ -8,6 +8,7 @@ import TodoDelete from './components/TodoDelete';
 import Modal from './components/Modal';
 import { useEffect } from 'react';
 import SaveButton from './components/SaveButton';
+import RestorationButton from './components/RestorationButton';
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -114,6 +115,7 @@ function App() {
           <BoardCreate />
           <TodoDelete />
           <SaveButton />
+          <RestorationButton />
           <Modal />
         </Wrapper>
       </DragDropContext>
